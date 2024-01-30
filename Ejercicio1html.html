@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Fibonacci</title>
+</head>
+<body>
+    <h1>Serie Fibonacci</h1>
+    <h2>Creador por: Daniela Marcillo</h2>
+    
+    <script>
+        // Crear una variable llamada numeroDeElementos que el profesor manipulará
+        const numeroDeElementos = 10;
+
+        // Función para generar la serie Fibonacci
+        function generarSerieFibonacci(numeroDeElementos) {
+            let serie = [0, 1];
+            for (let i = 2; i < numeroDeElementos; i++) {
+                serie[i] = serie[i - 1] + serie[i - 2];
+            }
+            return serie;
+        }
+
+        // Generar y mostrar la serie Fibonacci en la consola
+        const serie = generarSerieFibonacci(numeroDeElementos);
+        console.log(`Serie Fibonacci de ${numeroDeElementos} elementos:`);
+        console.log(serie);
+    </script>
+</body>
+</html>
